@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="main">
@@ -47,35 +47,35 @@
             .type(".")
         .go();
 
-        var div = document.getElementById("info");
-        var maxHeight = "0";
+        // var div = document.getElementById("info");
+        // var maxHeight = "0";
 
-        function readHeight() {
-            maxHeight = div.offsetHeight;
-        }
+        // function readHeight() {
+        //     maxHeight = div.offsetHeight;
+        // }
 
-        function setHeight() {
-            div.style.height = maxHeight + "px";
-        }
+        // function setHeight() {
+        //     div.style.height = maxHeight + "px";
+        // }
 
-        readHeight();
-        setHeight();
+        // readHeight();
+        // setHeight();
 
         function setText(type) {
             var text = document.getElementById("text");
 
             if(type == 'info') {
                 text.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu posuere neque. Cras finibus eget metus ac condimentum. Fusce lacinia turpis ut pulvinar varius. Praesent bibendum nisl in lorem gravida, ut rhoncus risus ultricies. Aenean in risus facilisis, semper dolor quis, laoreet ligula. In vitae dictum lectus, eget gravida nunc. Duis sed euismod nulla. Phasellus consectetur rutrum magna, ut posuere augue molestie eget. Donec aliquam id odio vel elementum. Suspendisse potenti.';
-                setHeight();
+                // setHeight();
             } else if(type == 'github') {
                 text.innerHTML = 'Zobacz moje projekty na GitHub: <strong><a href="http://www.github.com/kubisgg/" target="_blank">kubisgg</a></strong>';
-                setHeight();
+                // setHeight();
             } else if(type == 'discord') {
                 text.innerHTML = 'Możesz skontaktować się ze mną poprzez Discord: <strong>kubisgg</strong>';
-                setHeight();
+                // setHeight();
             } else if(type == 'mail') {
                 text.innerHTML = 'Możesz skontaktować się ze mną mailowo: <strong><a href="mailto:kubisgg@icloud.com">kubisgg@icloud.com</strong>';
-                setHeight();
+                // setHeight();
             }
         }
     </script>

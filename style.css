@@ -8,7 +8,7 @@ body {
 
 #main {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -16,16 +16,27 @@ body {
     text-align: center;
 }
 
-p#name {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    color: white;
-    font-weight:900;
+@media (max-width: 768px) {
+    #main {
+        top: 25%;
+        width: 80%;
+    }
 }
 
 p {
     font-size: 1.5rem;
     color: white;
+}
+
+p#name {
+    font-size: 3rem;
+    color: rgb(255, 95, 95);
+}
+
+@media (max-width: 425px) {
+    p {
+        font-size: .75rem;
+    }
 }
 
 #links {
@@ -35,6 +46,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
 }
 
 i {
@@ -48,16 +61,10 @@ i:hover {
     transition: .3s;
 }
 
-p#name {
-    font-size: 3rem;
-    color: rgb(255, 95, 95);
-}
-
 #info {
     border: 2px solid rgb(36, 36, 36);
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
