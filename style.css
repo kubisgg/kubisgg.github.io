@@ -1,3 +1,7 @@
+:root {
+    --ti-cursor-transform: translateX(-.3em);
+}
+
 * {
     font-family: 'Fira Code', monospace;
 }
@@ -59,6 +63,7 @@ i {
 i:hover {
     font-size: 3.5rem;
     transition: .3s;
+    text-shadow: 0 0 15px rgba(245, 245, 245, 0.7);
 }
 
 #info {

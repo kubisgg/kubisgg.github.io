@@ -30,8 +30,8 @@
     <script>
 
         new TypeIt("#name", {
-            speed: 50,
-            waitUntilVisible: true,
+                speed: 50,
+                waitUntilVisible: true,
             })
             .type("kbs", { delay: 1000 })
             .move(-2)
@@ -49,6 +49,7 @@
 
         function setText(type) {
             var text = document.getElementById("text");
+            var box = document.getElementById("info");
 
             if(type == 'info') {
                 text.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu posuere neque. Cras finibus eget metus ac condimentum. Fusce lacinia turpis ut pulvinar varius. Praesent bibendum nisl in lorem gravida, ut rhoncus risus ultricies. Aenean in risus facilisis, semper dolor quis, laoreet ligula. In vitae dictum lectus, eget gravida nunc. Duis sed euismod nulla. Phasellus consectetur rutrum magna, ut posuere augue molestie eget. Donec aliquam id odio vel elementum. Suspendisse potenti.';
