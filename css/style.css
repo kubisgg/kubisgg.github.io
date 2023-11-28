@@ -1,0 +1,97 @@
+:root {
+  --ti-cursor-transform: translateX(-.3em);
+}
+
+* {
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+#main {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #main {
+    top: 25%;
+    width: 80%;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  color: white;
+}
+p#name {
+  font-size: 3rem;
+  color: rgb(255, 95, 95);
+}
+@media (max-width: 425px) {
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+#links {
+  font-size: 2.5rem;
+  color: rgb(240, 240, 240);
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+i {
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+i:hover {
+  font-size: 3.5rem;
+  transition: 0.3s;
+  text-shadow: 0 0 15px rgba(245, 245, 245, 0.7);
+}
+
+#info {
+  border: 2px solid rgb(36, 36, 36);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:link {
+  color: lightskyblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:visited {
+  color: lightskyblue;
+  text-decoration: none;
+}
+a:hover {
+  transition: 0.3s;
+  color: lightblue;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #080808;
+  color: white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
